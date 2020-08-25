@@ -6,26 +6,31 @@
   "scripts": {
     "dev:server": "ts-node-dev --respawn --transpile-only --inspect --ignore-watch node_modules --no-notify src/server.ts",
     "build": "tsc",
-    "test": "jest --watch --passWithNoTests",
+    "test": "jest",
     "test:staged": "jest --passWithNoTests"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuidv4": "^6.2.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.10",
+    "@types/prettier": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-import-resolver-typescript": "^2.2.1",
+    "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-prettier": "^3.1.4",
     "git-commit-msg-linter": "^2.4.5",
     "husky": "^4.2.5",
     "jest": "^26.4.2",
     "lint-staged": "^10.2.12",
     "prettier": "^2.1.0",
+    "ts-jest": "^26.2.0",
     "ts-node-dev": "^1.0.0-pre.60",
     "typescript": "^4.0.2"
   }
