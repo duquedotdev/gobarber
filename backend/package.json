@@ -7,11 +7,14 @@
     "dev:server": "ts-node-dev --respawn --transpile-only --inspect --ignore-watch node_modules --no-notify src/server.ts",
     "build": "tsc",
     "test": "jest",
-    "test:staged": "jest --passWithNoTests"
+    "test:staged": "jest --passWithNoTests",
+    "typeorm" : "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "date-fns": "^2.15.0",
     "express": "^4.17.1",
+    "pg": "^8.3.3",
+    "typeorm": "^0.2.25",
     "uuidv4": "^6.2.3"
   },
   "devDependencies": {
