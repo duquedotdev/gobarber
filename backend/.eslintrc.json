@@ -19,6 +19,10 @@
       "prettier"
   ],
   "rules": {
+    // "@typescript-eslint/interface-name-prefix": ["error", {
+    //   "prefixWithI" : "always"
+    // }],
+    "no-useless-constructor": "off",
     "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern" : "_"
     }],
